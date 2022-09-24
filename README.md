@@ -30,3 +30,14 @@ As a whole dataset, the variance of the suspension coils do not exceed 100 pound
 When the cars are broken down into the three lots and then analyized with summary statistics, Lot 1 and Lot 2 are still under the variance of 100 pounds per square inch.  However, Lot 3 is well above the 100 pounds per square inch, with a variance of 170.2861224.  
 
 ![lot summary](deliverable_2_lot_summary.png)
+
+## T-Tests on Suspension Coils
+
+### T-Test on Total Summary
+
+Let Ho: mu=1500  and Ha: m != 1500
+With a p-value of .06028, which is greater than the alpha level of 0.05, we fail to reject the null.  There is no evidence to suggest that the true mean is different than mu=1500 pounds per square inch.  
+
+![one sample t test](deliverable_3_1st_test.png)
+
+
