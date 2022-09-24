@@ -64,6 +64,28 @@ With a p-value of 0.04168, which is less than alpha level 0.05, we reject the nu
 ## Study Design: MechaCar vs Competition
 
 - What metrics or metices are you going to test?
+
+When people shop for new cars, there are a few different variables that are considered.  Two of the most popular variables is fuel efficiency (city or highway) and safety rating.  People want to make sure they can get the mileage, especially since gas prices are constantly fluctuating and have been increasing more often then dropping.  People always want to make sure that they, and their families, are safe when traveling in the car.  
+
+
 - What is the null hypothesis or alternative hypothesis?
+
+When we test for fuel efficiency, it may be best to separate the city and highway into two different groups.  
+For the city: Ho: mean city mpg of MechaCar = mean city mpg of competition   and Ha: mean city mpg of MechaCar > mean city mpg of competition   We would want to see if MechaCar can get a better city mileage than other cars, making it a better choice.
+
+For the highway, we would set up our hypothesese the same way, replacing city with highway.  
+
+When we want to test the safety rating, we would want our Ho: MechaCar mean safety rating = Competition mean safety rating   and Ha: MechaCar mean safety rating > Competition mean safety rating.  Again, we would want to test to see if the safety rating is lower for other cars, making MechaCar the better option.  
+
 - What statistical test would you use to test the hypthesis? And why?
+
+For testing city and highway fuel efficiency, we would need to perform a two-sample T Test between MechaCar and each individual competitor.  Depending on how many competitiors need to be tested/compared, if there is a large number of competitiors it may be best to perform an ANOVA test instead.  
+
+For safety rating it may be best to use a Chi-Square test for homogenity to see if the ratings are the same across all companies or if they are different.  The Chi-Square test may not be able to tell us which ones are different, but could be a starting point if whether there is a difference that can be investigated further.  
+
+
 - What data is needed to run the statistical test?
+
+The data needed to run these tests would the fuel efficiency broken down by city and highway for MechaCar as well as any other competition.  We would also need to know safety ratings of all cars involved.  Safety rating is most likely used as a categorical variables in this case, so it may need to be converted to categories or bins to run the chi-square test (such as rating 0-2: not safe, 2.1-4: moderately safe, 4.1-6: safe, etc. )
+
+
