@@ -19,3 +19,21 @@ total_summary
 
 # create dataframe for summary by lot
 lot_summary <- suspension_coil_table %>% group_by(Manufacturing_Lot)%>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), Std_Dev=sd(PSI))
+
+
+#Deliverable 3
+
+#Create a t-test to determine if the PSI across all manufacturing ltos is statistically different from the population mean
+t.test(suspension_coil_table$PSI, mu=1500)
+
+
+#Perform T test on each lot
+# Lot 1
+t.test(subset(suspension_coil_table, Manufacturing_Lot=="Lot1")$PSI, mu=1500)
+
+#Lot 2
+t.test(subset(suspension_coil_table, Manufacturing_Lot=="Lot2")$PSI, mu=1500)
+
+#Lot 3
+t.test(subset(suspension_coil_table, Manufacturing_Lot=="Lot3")$PSI, mu=1500)
+
