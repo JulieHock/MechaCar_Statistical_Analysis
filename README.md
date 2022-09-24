@@ -40,4 +40,24 @@ With a p-value of .06028, which is greater than the alpha level of 0.05, we fail
 
 ![one sample t test](deliverable_3_1st_test.png)
 
+When the data is broken down by lot numbers, we can see there is a different story to tell.  For each lot, we will use Ho: mu=1500 and Ha: mu != 1500.
+
+#### Lot 1
+
+With a p-value of 1, which is greater than the alpha level of 0.05, we fail to reject the null.  There is no evidence to say that the mean PSI is any different than 1500 pounds per square inch in lot 1.  
+
+![Lot 1 test test](deliverable_3_ttest_lot1.png)
+
+#### Lot 2
+
+With a p-value of 0.6072, with is greater than alpha level 0.05, we fail to reject the null.  There is no evidence to say that the mean PSI is any different than 1500 pounds per square inch in lot 2.  
+
+![lot 2 t test](deliverable_3_ttest_lot2.png)
+
+#### Lot 3
+
+With a p-value of 0.04168, which is less than alpha level 0.05, we reject the null.  There is evidence to suggest that the mean PSI in Lot 3 is different than 1500 pounds per square inch.  
+
+![lot 3 t test](deliverable_3_ttest_lot3.png)
+
 
